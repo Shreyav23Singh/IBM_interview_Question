@@ -1,0 +1,127 @@
+Yesterday, I gave a technical interview for AWS Cloud Full Stack at IBM. 🤓 I'm sharing the questions with you for reference. 📝There were  33 questions, including core java, microservices, cloud, java architecture, etc.
+
+🧨1. public class Main {
+
+public static void main(String[]
+
+int result, x;
+
+x = 1;
+
+result = 0;
+
+while (x <= 10) {
+
+if (x%2 == 0)
+
+result += x;
+
+++x;
+
+}
+
+System.out.println(result);
+
+}
+
+}
+
+Which of the following will be the output ?
+
+Pick ONE option
+
+1️⃣25
+
+2️⃣30✔️
+
+3️⃣50
+
+4️⃣29
+
+🅰️30
+
+🧨2. class ThreadExample implements Runnable{
+
+public void run() {
+
+System.out.print("running");
+
+}
+
+public static void main(String[] args) {
+
+Thread t = new Thread(new ThreadExample())
+
+t.run();
+
+t.run();
+
+t.start();
+
+}
+
+What is the output ?
+
+1️⃣."running"
+
+2️⃣. "runningrunningrunning"
+
+3️⃣. compilation fails✔️
+
+4️⃣. NOT
+
+🅰️. In Java, the start() method should be used to begin the execution of a new thread. However, in this code, the run() method is called directly instead of using start() to create a new thread. This will not create a new thread, and the code will not run concurrently. The correct usage should be t.start() instead of t.run().
+
+🧨3. implementing the Clonable Interface and invoking super.clone() will do
+
+Pick ONE option
+
+1️⃣None
+
+2️⃣Partial cloning
+
+3️⃣Shallow cloning✔️
+
+4️⃣Deep Cloning
+
+🅰️Implementing the Cloneable interface and invoking super.clone() typically results in shallow cloning. Shallow cloning creates a new object and copies the fields of the original object to the new object. However, if the fields of the original object are reference types, they will still refer to the same objects in both the original and cloned objects. This means changes to the objects referenced by these fields will be reflected in both the original and cloned objects.
+
+🧨4. Premgen space has been replaced by which of these in Java 8?
+
+🅰️Metaspace
+
+🧨5. Correct examples of functional interface 
+
+1. Java.Lang. runnable✔️
+
+2.java.util.List
+
+3.java.io.InputStream
+
+4.java.util.Comparator✔️
+
+🅰️.Both Runnable and Comparator are examples of functional interfaces in Java. They have a single abstract method (SAM), making them functional interfaces, which can be used with lambda expressions.
+
+🧨6.Void accept (T t) is a method of
+
+1. Consumer✔️
+
+2. Producer 
+
+3. Both 
+
+4. None
+
+🧨7. What are Intermediate operations? Select all that apply
+
+1. Intermediate operations are mostly Lambda functions
+
+2. Used to collect the processed stream data✔️
+
+3. Transforms stream into another stream✔️
+
+4. Operations are applied in random order
+
+🅰️Intermediate operations in Java streams are operations that transform one stream into another. They do not produce a final result but instead return a new stream that can be used for further processing. Additionally, the order in which intermediate operations are applied can impact the performance, but they are not applied in a random order. The order is determined by the stream pipeline and is generally left-to-right as they appear in the pipeline.
+
+#interview #interviewpreparation #ibm
