@@ -121,7 +121,7 @@ Pick ONE option
 3. Transforms stream into another stream✔️
 
 4. Operations are applied in random order
-
+🅰️Intermediate operations in Java streams are operations that transform one stream into another. They do not produce a final result but instead return a new stream that can be used for further processing. Additionally, the order in which intermediate operations are applied can impact the performance, but they are not applied in a random order. The order is determined by the stream pipeline and is generally left-to-right as they appear in the pipeline.
 
 
 💠8. Which of the following is the correct lambda expression which add two numbers and return their sum? 
@@ -204,12 +204,12 @@ Correct way :- BiFunction<String, String, Boolean> compareString = (x, y) -> x.e
 
 💠12. When users enters invalid data, which HTTP status code should be returned?
 
-🅰️400, because this status code indicates that the server cannot or will not process the request because the received data is invalid, incomplete, or otherwise in error. It's a general-purpose client error status.
+🅰️400, because this status code indicates that the server cannot or will not process the request because the received data is invalid, incomplete, or 
+otherwise in error. It's a general-purpose client error status.
 
+13. Microservices architecture is which coupled?
 
+🅰️loosely coupled design
 
-
-
-🅰️Intermediate operations in Java streams are operations that transform one stream into another. They do not produce a final result but instead return a new stream that can be used for further processing. Additionally, the order in which intermediate operations are applied can impact the performance, but they are not applied in a random order. The order is determined by the stream pipeline and is generally left-to-right as they appear in the pipeline.
-
-#interview #interviewpreparation #ibm
+In a microservices architecture, services are designed to be independent, deployable units that communicate with each other through well-defined APIs. 
+This loose coupling allows each microservice to evolve independently, making it easier to develop, deploy, and scale individual services without affecting the entire system.
