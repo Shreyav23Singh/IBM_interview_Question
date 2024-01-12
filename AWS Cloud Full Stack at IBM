@@ -122,6 +122,94 @@ Pick ONE option
 
 4. Operations are applied in random order
 
+
+
+💠8. Which of the following is the correct lambda expression which add two numbers and return their sum? 
+
+1.( Int a, int b) ->{return a + b;};
+
+2. (a,b) -> {return a + b;};
+
+3. Both ✔️
+
+4. None
+
+🅰️.  3
+
+
+
+💠9.Given below code snippet
+
+interface A { 
+
+int aMethod(String s); 
+
+}
+
+Which of the following are valid stat
+
+Pick ONE option
+
+1️⃣A a = a -> a.length();✔️
+
+2️⃣Ax = y -> {return y;};
+
+3️⃣As="2"> Integer.parseInt(s);
+
+4️⃣A b = (String s) 1;
+
+
+
+🅰️. 1
+
+💠10. Sorting speed had been improved significantly on multi - core machines by using. Pick one option
+
+1. Arrays.parallelSort✔️
+
+2. Arrays.sort
+
+3. COLLECTION.PARRALLELSort
+
+4. Arrays.sortParallelly
+
+🅰️. 1
+
+
+
+💠11. import java.util.function.BiFunction;
+
+public class StringCompare {
+
+public static void main(String args[]) {
+
+BiFunction <String, String, Boolean > compare. x.equals(y);  #line1
+
+} System.out.println(compareString.apply("Java8",
+
+Pick ONE option
+
+1️⃣This program results in a compiler error in the line marked with #1✔️
+
+2️⃣This program prints: true
+
+3️⃣This program prints: false
+
+4️⃣This program prints: ("Java8", "Java8") -> "Java8".equals("Java8")
+
+🅰️The code has a few issues. It incorrectly uses compare instead of BiFunction. Additionally, the lambda expression is not properly formed for BiFunction. 
+
+Correct way :- BiFunction<String, String, Boolean> compareString = (x, y) -> x.equals(y);
+
+
+
+💠12. When users enters invalid data, which HTTP status code should be returned?
+
+🅰️400, because this status code indicates that the server cannot or will not process the request because the received data is invalid, incomplete, or otherwise in error. It's a general-purpose client error status.
+
+
+
+
+
 🅰️Intermediate operations in Java streams are operations that transform one stream into another. They do not produce a final result but instead return a new stream that can be used for further processing. Additionally, the order in which intermediate operations are applied can impact the performance, but they are not applied in a random order. The order is determined by the stream pipeline and is generally left-to-right as they appear in the pipeline.
 
 #interview #interviewpreparation #ibm
