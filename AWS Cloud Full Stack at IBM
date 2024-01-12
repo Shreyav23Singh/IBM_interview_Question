@@ -212,4 +212,50 @@ otherwise in error. It's a general-purpose client error status.
 🅰️loosely coupled design
 
 In a microservices architecture, services are designed to be independent, deployable units that communicate with each other through well-defined APIs. 
-This loose coupling allows each microservice to evolve independently, making it easier to develop, deploy, and scale individual services without affecting the entire system.
+This loose coupling allows each microservice to evolve independently, making it easier to develop, deploy, and scale individual services without affecting
+the entire system.
+
+💠14. Which annotation is used to inject the properties into the springboot-based microservice?
+
+🅰️@Value annotation is commonly used to inject properties from configuration files or other sources into Spring Beans. You can use it to inject values directly into fields, methods, or constructor parameter
+
+
+
+🧨15. What are the two properties of transactional annotations?
+
+1. readOnlyClassName
+
+2. Propagation✔️
+Yesterday, I had a technical interview for AWS Cloud Full Stack at IBM. I am sharing the questions for reference. This is the third post of IBM interview questions.
+
+🔶16. What are the architectural constraints of rest API?
+
+🅰️✔️Statelessness: Each request from a client contains all the information the server needs to fulfill that request. The server should not store any information about the client's state between requests.
+
+✔️Client-Server: The client and server are separate entities that communicate over a network. The client is responsible for the user interface and user experience, while the server is responsible for processing requests, managing resources, and handling business logic.
+
+✔️Uniform Interface: A uniform and consistent way to interact with resources. It includes a set of well-defined constraints such as resource identification through URIs, representation of resources, and self-descriptive messages.
+
+✔️Cacheability: Responses from the server can be explicitly marked as cacheable or non-cacheable. This improves efficiency and reduces the need for repeated requests to the server.
+
+✔️Layered System: The architecture can be composed of multiple layers, where each layer has a specific responsibility. This helps in improving scalability and flexibility.
+
+✔️Code on Demand (Optional): The server can extend the functionality of a client by transferring executable code (e.g., JavaScript) to be executed by the client. This constraint is optional in REST.
+
+
+
+🔶17. Which advice is executed once a joint point finishes?
+
+🅰️After advice
+
+
+
+🔶18. When a client registers Eureka, what is the metadata information it shares with Eureka?
+
+🅰️When a client registers with Eureka, it typically shares the following metadata information:
+
+Hostname, Port number & Health indicator URI
+
+3. rollbackForClassName
+
+4. rollbackFor✔️
